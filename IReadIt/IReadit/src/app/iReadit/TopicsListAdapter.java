@@ -32,7 +32,9 @@ public class TopicsListAdapter extends ArrayAdapter<Topic>  {
 	}
 	
 	
-
+	public void add() {
+		
+	}
 	
 	
 	public View getView(int position, View convertView, ViewGroup parent){

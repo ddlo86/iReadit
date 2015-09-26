@@ -55,7 +55,7 @@ public class TopicsFragment extends ListFragment implements OnItemClickListener,
 	private List<Topic> topicList = new ArrayList<Topic>();
 	private TopicsListAdapter topicAdapter;
 	private ProgressDialog pDialog;
-    
+    private GestureDetector gestureDetector;
     View.OnTouchListener gestureListener;
     private Topic topicJSON;
     private TopicsJSON redditJSON;
@@ -171,6 +171,7 @@ public class TopicsFragment extends ListFragment implements OnItemClickListener,
 
 		super.onViewCreated(v, savedInstanceState);
 		
+		//entriesList.setOnItemClickListener(TopicsFragment.this); //TopicsFragment.this
 		getListView().setOnScrollListener(this);
 		getListView().setOnItemClickListener(this);
         entriesList.setOnTouchListener(gestureListener);  

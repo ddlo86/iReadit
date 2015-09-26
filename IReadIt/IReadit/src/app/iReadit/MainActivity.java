@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements TopicsFragment.On
 	CommentsFragment.OnCommentsSelectedListener {
 
 	
-	private String url = "http://www.reddit.com/r/.json";
+	private String url = "http://www.reddit.com/r/news/.json";
 	EditText urlInput;
 	MenuItem logIn;
 	boolean isDualPane;
@@ -32,13 +32,14 @@ public class MainActivity extends AppCompatActivity implements TopicsFragment.On
 	final static String REDDIT_URL = "http://www.reddit.com/r/";
 	final static String JSON_PREFIX = ".json";
 	final String DEBUG_TAG = "Intro Activity";
+	private Toolbar toolbar;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		//TODO: Industry Standard Coding for dual pane.
 //		 View portraitView = findViewById(R.id.portraitContainer);
 //	     isDualPane = !(portraitView != null && (portraitView.getVisibility() == View.VISIBLE));
 		
@@ -52,8 +53,10 @@ public class MainActivity extends AppCompatActivity implements TopicsFragment.On
 	     Log.d("app.iReadit", "is Dual Pane: " + isDualPane);
 	     
 		if (savedInstanceState == null) {
+			
 			setSubReddit(url);
 		}
+		
 
 	}
 	
@@ -129,7 +132,7 @@ public class MainActivity extends AppCompatActivity implements TopicsFragment.On
 
 	    	@Override
 	        public boolean onQueryTextChange(String newText) {
-	        //inherited required method    
+	        //required method    
 	            return true;
 	        }
 
@@ -144,6 +147,11 @@ public class MainActivity extends AppCompatActivity implements TopicsFragment.On
 	    };
 
 	    searchView.setOnQueryTextListener(queryTextListener);
+	    
+	    
+	    
+	    
+	    
 	    return super.onCreateOptionsMenu(menu);
 	}
 	
