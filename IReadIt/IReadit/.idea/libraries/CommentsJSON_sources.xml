@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CommentsJSON-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/CommentsJSON-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

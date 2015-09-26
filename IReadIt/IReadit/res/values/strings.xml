@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IReadit</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="redditResponse">Return String Here</string>
+    <string name="log_in">Log In</string>
+    <string name="refresh">Refresh</string>
+    <string name="search_reddit">Search</string>
+    
+    <string-array name="reddit_headers">
+        <item>Hot</item>
+        <item>New</item>
+        <item>Rising</item>
+        <item>Top</item>
+
+    </string-array>
+</resources>

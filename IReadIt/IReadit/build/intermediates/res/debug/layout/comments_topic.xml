@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/topicScore"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/topicTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is the Topic&apos;s Title" />
+
+        <TextView
+            android:id="@+id/topicUpvoted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="97%"
+            android:textSize="@dimen/topicSubset" />
+
+        <TextView
+            android:id="@+id/topicTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posted X hours ago"
+            android:textSize="@dimen/topicSubset" />
+
+        <TextView
+            android:id="@+id/topicAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:textSize="@dimen/topicSubset" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/topicSelfText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:text="This is the topic&apos;s self text paragraph This is the topic&apos;s s"
+        android:textSize="@dimen/topicSubset" />
+
+    <TextView
+        android:id="@+id/topicScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Score"
+        android:textSize="@dimen/topicSubset" />
+
+</RelativeLayout><!-- From: file:/E:/AndroidWork/IReadIt/IReadit/res/layout/comments_topic.xml -->
