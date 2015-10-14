@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:background="@drawable/bg_rounded_corners"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:padding="2px"
+        android:text="pizza"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:text="crocker7james@gmail.com"
+        android:id="@+id/etEmail"
+        android:background="@drawable/bg_rounded_corners"
+        android:layout_marginTop="229dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword"
+        android:padding="2px" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btnRegister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:layout_alignLeft="@+id/imageBo"
+        android:layout_alignStart="@+id/imageBo"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignRight="@+id/imageBo"
+        android:layout_alignEnd="@+id/imageBo" />
+
+    <ImageView
+        android:layout_width="325px"
+        android:layout_height="325px"
+        android:id="@+id/imageBo"
+        android:src="@drawable/emblem"
+        android:paddingBottom="24dp"
+        android:longClickable="true"
+        android:layout_alignBottom="@+id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp" />
+</RelativeLayout>

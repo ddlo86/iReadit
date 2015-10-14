@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.mapbox.mapboxsdk.views.MapView
+            android:id="@+id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="0sp"
+            mapbox:mapid="iop280.n3o70f5l"
+            android:layout_weight="2.5"
+            mapbox:accessToken="pk.eyJ1IjoiaW9wMjgwIiwiYSI6IjhjNmRjODdlMmVlNjhkMGE4MmM1OThkZWRhZjA5MGYxIn0.4f--rrX1DX1hem3JmC3Ljw"
+            />
+    <!--<fragment-->
+        <!--android:tag="fragment_map"-->
+        <!--android:id="@+id/fragment_map"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="175dp"-->
+        <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+        <!--class="com.example.gmcl.Bo.Fragments.MapsFragment"/>-->
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Job Id"
+                    android:id="@+id/jobId"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_span="10"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="From"
+                    android:id="@+id/from"
+                    android:layout_span="5"
+                    android:layout_gravity="left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="To"
+                    android:id="@+id/to"
+                    android:layout_span="5"
+                    android:layout_gravity="right"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Toronto"
+                    android:id="@+id/pickupCity"
+                    android:layout_span="5"
+                    android:layout_gravity="left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Vancouver"
+                    android:id="@+id/dropoffCity"
+                    android:layout_span="5"
+                    android:layout_gravity="right"
+                    />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar"
+                    android:layout_column="1"
+                    android:layout_span="8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="ETA: XX:YY:ZZ"
+                    android:id="@+id/eta"
+                    android:layout_column="4"
+                    android:layout_gravity="center_horizontal"
+                    />
+    </RelativeLayout>
+ </LinearLayout>
